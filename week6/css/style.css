@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html{
+    font-size: 20px;
+}
+body{
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.5;
+    font-family: playfair display;
+}
+.container{
+   /* max-width: 90%; */
+    max-width: 90vw;
+    margin: 0 auto;
+}
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 10rem 0;
+    text-align: center;
+    background-image: url("../images/bread.jpg");
+    background-repeat: no-repeat;
+/* background-position: 20px 40px;  */
+    background-size: cover;
+    background-position: center;
+    font-size: 10px;
+    background: #333 url(../images/bread.jpg) cover center center
+}
+
+h1{
+    font-size: 2rem;
+    /* 1rem = 16px */
+    text-transform: uppercase;
+}
+nav ul{
+    list-style: none;
+    padding: 0.7rem 0;
+}
+nav ul li{
+    display: inline;
+    margin: 0 0.5rem;
+}
+    nav ul li a{
+       color: #fff;
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+}
+nav ul li a:hover{
+    color: #fff;
+    color: #333;
+}
+
+section{
+background-color: white;
+padding: 1rem;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0.1);
+}
+h2{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+aside{
+    background-color: #7ee8c5;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+#layout{
+    display: flex;
+    justify-content: space-between;
+}
+#layout p{
+    width: 25%;
+     margin: 10px; 
+   
+}
+
+footer{
+    text-align: center;
+    background-color: #353633;
+    color: #f4f4f4;
+    padding: 0.8rem 0;
+    margin-top: 1rem;
+    border-radius: 5px;
+}

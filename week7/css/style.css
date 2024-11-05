@@ -1,0 +1,87 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 5px solid darblukred;
+    padding: 10px;
+    margin: 10px;
+}
+.container{
+    width: 400px;
+    border: 6px solid #111;
+    margin: 0 auto;
+  }
+  
+  /*
+  Add some space between the border;
+  */
+  figure{
+    margin: 10px;
+  }
+  
+  /*
+  Give the caption a distinct style.
+  */
+  figcaption, a{
+    font-family: arial, helvetica, sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    background:#111;
+    color: #fff;
+  }
+  
+  /* 
+  Responsive Image
+  The image will scale with the size of it's container
+  */
+  figure img{
+    width:100%;
+    height: auto;
+    display: block;
+  }
+  .container{
+    width: 400px;
+    margin: 0 auto;
+  }
+  img{
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+  }
+  .container{
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid red;
+  }
+  
+  /*
+  4 Boxes at 25% each fills the container
+  */
+  .box{
+    width: 25%;
+    height: 100px;
+    float: left
+  }
+  
+  /*
+  Properly calculates the height of the containing element with elements floated inside.
+  */
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .purple{
+    background: purple;
+  }
+  .blue{
+    background: blue;
+  }
+  .green{
+    background: green;
+  }
+  .orange{
+    background: orange;
+  }

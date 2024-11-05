@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(164, 192, 192);
+}
+/* this is a comment */
+header{
+    background-color: rgb(36, 69, 58);
+    color: whitesmoke;
+    padding: 1rem 2rem 3rem 4rem;
+    /* order: top right bottom left */
+    /* top and bottom, left and right */
+    /* 1rem = 16 pixels */
+    margin: 1rem;
+}
+h1,h2,h3{
+    text-decoration: underline;
+}
+div p{
+    font-size: 0.8rem;
+    color:brown;
+}
+p{
+    color: blue;
+}
+p{
+    font-size: 1.2rem;
+    color: red;
+    margin: 1rem 0;
+}
+
+/*  to target an id we need to use hash (#) */
+#goals{
+    font-weight: 1000;
+    border: 2px solid darkgreen;
+}
+/* to target a class use the dot (.) */
+.highlight{
+    background-color: gold;
+    border: 2px solid red;
+}
+.notes{
+    border: 2px solid black;
+}
+
+li:nth-child(2n+1){
+    background-color: rgb(240, 14, 14);
+}
+
+a{
+    display: block;
+    color: black;
+}
+a [href="https://algonquincollege.com"]{
+    color: green;
+}
+a:link {
+    color: gold;
+}
+a:hover {
+    color: darkgreen;
+}
+a:visited {
+    color: blue;
+}
+span{
+    color: blue;
+}
+span{
+    color: inherit;
+}
+/* forces the span to inherit the color from the parent*/
+span{
+    color: unset;
+}
+/* inherit: will trigger the inheritance of the computed value of its parent element and can be applied to any CSS property.
+
+initial: applies the initial or default value of a property as set by the browser.
+
+unset: resets the property to its inherited value if available or to its initial value if not. unset can be thought of as a conditional combination of inherit and initial
+
+revert: is a newer option but not widely supported by major browsers. It will rollback the value of a property to the value it would have if no changed had been made within the context of its origin. */
+

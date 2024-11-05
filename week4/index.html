@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week4</title>
+    <style>
+        table, td,th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>   
+        <h1>Week 4 learning</h1>
+    <a href="#cakes">Jump to cakes menu</a>
+    </header>
+<main> 
+    <!-- learning about img tag-->
+    <h2> Image tag example</h2>
+    <img src="./images/coffee-shop.jpg" alt="coffee cup with coffee beans" >
+    <img src="./images/coffee-shop.jpg" title="coffee cup with coffee"
+    width="500" >
+    <h2>Link tag Example</h2>
+    <p>Here is a link to visit <a href="https://www.google.com"target="_blank">Google Hompage</a>.</p>
+    <a href=",/thanks.html">Thank you page.</a>
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis at,
+  dignissimos ratione doloremque rerum non rem cum laudantium quia consectetur,
+  saepe perferendis aperiam iste reprehenderit fugit ipsa, excepturi impedit.
+  Saepe.
+</p>
+<p>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis at,
+  dignissimos ratione doloremque rerum non rem cum laudantium quia consectetur,
+  saepe perferendis aperiam iste reprehenderit fugit ipsa, excepturi impedit.
+  Saepe.
+</p>
+<ul id="cakes">
+  <li>Red Velvet</li>
+  <li>Tiramisu</li>
+  <li>Black Forest</li>
+</ul>
+
+<h2>Simple HTML Table</h2>
+<table> 
+<caption>Student grade information</caption>
+<thead> 
+    <tr>
+        <th>Student Name</th>
+        <th>Course Name</th>
+        <th>Grade</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+    <td>John</td>
+    <td>English</td>
+    <td>A+</td>
+</tr>
+<tr>
+    <td>John</td>
+    <td>English</td>
+    <td>B+</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Merging Cells</h2>
+<table>
+    <thead>
+      <tr>
+        <th rowspan="2">Practice</th>
+        <th colspan="2">Days</th>
+        <th colspan="2">Months</th>
+      </tr>
+      <tr>
+        <th>Mon</th>
+        <th>Wed</th>
+        <th>Jan</th>
+        <th>Sep</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bob</td>
+        <td>1</td>
+        <td>3</td>
+        <td>2</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Fran</td>
+        <td>7</td>
+        <td>9</td>
+        <td>8</td>
+        <td>7</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- for elements -->
+   <h2>HTML Form Elements</h2>
+   <form actions=",/thanks.html" method="get">
+    <label for="fullname":>Name:</label>
+    <input id="fullname" type="text" >
+
+    <label for="age">Age:</label> 
+    <input id="age" type="number" min="0" max="40" step="1" >
+    <form action="thanks.html" method="post">
+        <label for="message">Your Message</label>
+        <textarea id="message"></textarea>
+      </form>
+    <button type="submot">Send</button>
+   </form>
+   
+</main>
+</body>
+</html>

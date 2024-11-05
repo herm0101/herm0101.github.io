@@ -1,0 +1,33 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50pxpx;
+}
+header,footer{
+    background-color: red;
+    
+}
+.site-title {
+    color: aqua;
+}
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+ol li {
+    list-style-type: square;
+}
+ol li:nth-child(odd) {
+    background-color: grey;
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    text-decoration: none; 
+    padding: 10px;
+    border: 1px solid gold;
+    background-color: aqua;
+}
+nav a:hover, nav a:focus {
+    background-color: #3498db;
+    color: white;
+}

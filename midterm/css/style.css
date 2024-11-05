@@ -1,0 +1,154 @@
+
+:root {
+    --primary-color: #aad4cf;
+    --text-color: #333;
+    --background-color: #f0f8f7;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  header {
+    text-align: center;
+    position: relative;
+  }
+  
+  .header-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .site-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+  
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  main {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  /* Article Section */
+  #story {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  .container{
+    margin: auto;
+    margin-left: 2px;
+    width: auto;
+    padding: 0 10px 0 0;
+  }
+  
+
+  .lone-starfish{
+    float: left;
+    margin-right: 20px;
+    width: 200px;
+  }
+  
+  #story h2 {
+    font-size: 1.6em;
+    color: #333
+  }
+  
+  #facts {
+    padding: 20px;
+  }
+  
+  #facts h3 {
+    font-size: 1.5em;
+    color:#333
+  }
+  
+  #facts ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  #contact {
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #333;
+ 
+  }
+  
+  #contact h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    padding: 10px;
+    border: 1px solid #333;
+  }
+  
+  .radio-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button[type="submit"] {
+    padding: 5px;
+    border: #333 auto;
+    background-color: var(--primary-color);
+    color: #333;
+    font-size: 1em;
+   
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #90b8b2;
+  }
+  
+
+  footer {
+    text-align: right;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: #666;
+  }

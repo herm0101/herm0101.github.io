@@ -1,0 +1,246 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* Base Styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f9f9f9;
+}
+
+/* Buttons Styling */
+button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+}
+
+header .nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: url('../images/main-banner.jpg') no-repeat center/cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero button {
+  margin-top: 1rem;
+}
+
+/* About Section */
+.about {
+  padding: 2rem 1rem;
+  background-color: #f4f4f4;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Vision Section */
+.vision {
+  padding: 3rem 1rem;
+  background: url('../images/vision.jpg') no-repeat center/cover;
+  color: white;
+  text-align: center;
+}
+
+.vision h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.vision p {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Services Section */
+.services {
+  padding: 3rem 1rem;
+  background-color: #ffe6ac;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.services .service {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: start;
+}
+
+.services .service-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: white;
+  text-align: center;
+}
+
+.services .service-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.services .service-item h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.services .service-item p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.services .service-item button {
+  margin-top: 1rem;
+}
+
+/* Team Section */
+.team {
+  padding: 3rem 1rem;
+  background-color: #f4f4f4;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.team h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.team .team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.team .team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.team .team-member h3 {
+  font-size: 1rem;
+  color: #222;
+}
+
+.team .team-member p {
+  font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 3rem 1rem;
+  background-color: #c78c06;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #000;
+  color: white;
+  padding: 0.8rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #222;
+  color: white;
+}
+
+/* Media Queries */
+@media (min-width: 760px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .services .service {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .team .team-member {
+    justify-content: space-between;
+  }
+}
